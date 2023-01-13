@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-         <p className={styles.title}>Coffee Connoiseur</p>
+         {/* <p className={styles.title}>Coffee Connoiseur</p> */}
     <Banner/>
       </main>
       
