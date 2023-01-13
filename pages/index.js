@@ -7,6 +7,11 @@ import Banner from '../components/banner'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+const bannerBtnClick =()=>{
+
+}
+
   return (
     <>
       <Head>
@@ -17,7 +22,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
          {/* <p className={styles.title}>Coffee Connoiseur</p> */}
-    <Banner/>
+    <Banner buttonText="View stores nearby" onBannerBtnClick={bannerBtnClick}/>
       </main>
       
     </>
