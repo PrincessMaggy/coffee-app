@@ -6,6 +6,8 @@ import Banner from '../components/banner'
 import Image from 'next/image'
 import Card from '../components/card'
 
+import coffeeStores from '../data/coffee-stores.json'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -35,12 +37,17 @@ export default function Home() {
     </div>
 
     <div className={styles.cardLayout}>
-        <Card 
-            name="DarkHorse Coffee" 
-            href="/coffee-store/darkhorse-coffee" 
-            imgUrl="/static/hero-image.png"
+      {coffeeStores.map((coffeeStore) =>{
+        return(
+          <Card 
+            name={coffeeStore.name}
+            href={`/coffee-store/${coffeeStore.id}`}
+            imgUrl={coffeeStore.imgUrl}
             className={styles.card} 
             />
+        )
+      })}
+       
     </div>
         
       </main>
