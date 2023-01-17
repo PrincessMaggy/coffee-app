@@ -4,14 +4,15 @@ import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Banner from '../components/banner'
 import Image from 'next/image'
+import Card from '../components/card'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-const bannerBtnClick =()=>{
+  const bannerBtnClick =()=>{
 
-}
+  }
 
   return (
     <div className='styles.container'>
@@ -28,9 +29,20 @@ const bannerBtnClick =()=>{
         onBannerBtnClick={bannerBtnClick}
     />
     <div className={styles.heroImage}>
-        <Image src="/static/hero-image.png" width={700} height={400} />
+        <Image 
+        src="/static/hero-image.png" 
+        width={700} height={400} />
     </div>
-    
+
+    <div className={styles.cardLayout}>
+        <Card 
+            name="DarkHorse Coffee" 
+            href="/coffee-store/darkhorse-coffee" 
+            imgUrl="/static/hero-image.png"
+            className={styles.card} 
+            />
+    </div>
+        
       </main>
       
     </div>
