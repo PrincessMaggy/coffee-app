@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { Inter } from '@next/font/google'
+//import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
 import Banner from '../components/banner'
 import Image from 'next/image'
@@ -8,9 +8,17 @@ import Card from '../components/card'
 
 import coffeeStores from '../data/coffee-stores.json'
 
-const inter = Inter({ subsets: ['latin'] })
+export async function getStaticProps(context) {
+  return{
+    props:{
+      coffeeStores,
+    },
+  }
+}
 
-export default function Home() {
+//const inter = Inter({ subsets: ['latin'] })
+
+export default function Home(props) {
 
   const bannerBtnClick =()=>{
 
@@ -44,6 +52,7 @@ export default function Home() {
             href={`/coffee-store/${coffeeStore.id}`}
             imgUrl={coffeeStore.imgUrl}
             className={styles.card} 
+            key={coffeeStore.id}
             />
         )
       })}
