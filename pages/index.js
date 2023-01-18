@@ -6,12 +6,12 @@ import Banner from '../components/banner'
 import Image from 'next/image'
 import Card from '../components/card'
 
-import coffeeStores from '../data/coffee-stores.json'
+import coffeeStoresData from '../data/coffee-stores.json'
 
 export async function getStaticProps(context) {
   return{
     props:{
-      coffeeStores,
+      coffeeStores:coffeeStoresData,
     },
   }
 }
@@ -41,23 +41,26 @@ export default function Home(props) {
     <div className={styles.heroImage}>
         <Image 
         src="/static/hero-image.png" 
-        width={700} height={400} />
+        width={700} height={400} alt="hero" />
     </div>
-
-    <div className={styles.cardLayout}>
-      {coffeeStores.map((coffeeStore) =>{
-        return(
-          <Card 
-            name={coffeeStore.name}
-            href={`/coffee-store/${coffeeStore.id}`}
-            imgUrl={coffeeStore.imgUrl}
-            className={styles.card} 
-            key={coffeeStore.id}
-            />
-        )
-      })}
-       
-    </div>
+    {props.coffeeStores.length > 0 && (
+       <>
+          <h2 className={styles.heading2}>Toronto Stores</h2>
+          <div className={styles.cardLayout}>
+            {props.coffeeStores.map((coffeeStore) =>{
+              return(
+                <Card 
+                  name={coffeeStore.name}
+                  href={`/coffee-store/${coffeeStore.id}`}
+                  imgUrl={coffeeStore.imgUrl}
+                  className={styles.card} 
+                  key={coffeeStore.id}
+                  />
+              )
+            })}
+          </div> 
+    </>
+    )}
         
       </main>
       
