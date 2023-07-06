@@ -1,26 +1,515 @@
 [
     {
-      "id": 0,
-      "name": "StrangeLove Coffee",
-      "imgUrl": "https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80",
-      "websiteUrl": "https://www.strangelovecoffee.ca/",
-      "address": "983 Queen St E, Toronto, ON M4M 1K2",
-      "neighbourhood": "at King and Spadina"
+      "fsq_id": "49d51ce3f964a520675c1fe3",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 15,
+      "geocodes": {
+        "main": {
+          "latitude": 41.878031,
+          "longitude": -87.629542
+        },
+        "roof": {
+          "latitude": 41.878031,
+          "longitude": -87.629542
+        }
+      },
+      "link": "/v3/places/49d51ce3f964a520675c1fe3",
+      "location": {
+        "address": "53 W Jackson Blvd",
+        "census_block": "170318391001093",
+        "country": "US",
+        "cross_street": "at S Dearborn St",
+        "dma": "Chicago",
+        "formatted_address": "53 W Jackson Blvd (at S Dearborn St), Chicago, IL 60604",
+        "locality": "Chicago",
+        "postcode": "60604",
+        "region": "IL"
+      },
+      "name": "Intelligentsia Coffee",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4bfbd2aabbb7c928ea970843",
+          "name": "Monadnock Building"
+        }
+      },
+      "timezone": "America/Chicago"
     },
     {
-      "id": 1,
-      "name": "Dark Horse Coffee",
-      "imgUrl": "https://images.unsplash.com/photo-1498804103079-a6351b050096?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2468&q=80",
-      "websiteUrl": "https://www.darkhorseespresso.com/",
-      "address": "401 Richmond St W",
-      "neighbourhood": "Richmond and Spadina"
+      "fsq_id": "5396301d498e2660782b078a",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 151,
+      "geocodes": {
+        "main": {
+          "latitude": 41.877219,
+          "longitude": -87.628998
+        },
+        "roof": {
+          "latitude": 41.877219,
+          "longitude": -87.628998
+        }
+      },
+      "link": "/v3/places/5396301d498e2660782b078a",
+      "location": {
+        "address": "343 S Dearborn St",
+        "census_block": "170318391001092",
+        "country": "US",
+        "cross_street": "at W Van Buren St",
+        "dma": "Chicago",
+        "formatted_address": "343 S Dearborn St (at W Van Buren St), Chicago, IL 60604",
+        "locality": "Chicago",
+        "postcode": "60604",
+        "region": "IL"
+      },
+      "name": "Dollop Coffee Co.",
+      "related_places": {},
+      "timezone": "America/Chicago"
     },
     {
-      "id": 300,
-      "name": "Route 300",
-      "imgUrl": "https://images.unsplash.com/photo-1498804103079-a6351b050096?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2468&q=80",
-      "websiteUrl": "https://www.darkhorseespresso.com/",
-      "address": "401 Richmond St W",
-      "neighbourhood": "Route 300 Neighbourhood"
+      "fsq_id": "5467af9e498e1b95c055253b",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13332,
+          "name": "Salad Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/salad_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13334,
+          "name": "Sandwich Spot",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/deli_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 252,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 41.875901,
+          "longitude": -87.629061
+        },
+        "front_door": {
+          "latitude": 41.875888,
+          "longitude": -87.62912
+        },
+        "main": {
+          "latitude": 41.875888,
+          "longitude": -87.62912
+        },
+        "roof": {
+          "latitude": 41.875999,
+          "longitude": -87.628948
+        }
+      },
+      "link": "/v3/places/5467af9e498e1b95c055253b",
+      "location": {
+        "address": "439 S Dearborn St",
+        "census_block": "170318391002027",
+        "country": "US",
+        "cross_street": "Congress",
+        "dma": "Chicago",
+        "formatted_address": "439 S Dearborn St (Congress), Chicago, IL 60605",
+        "locality": "Chicago",
+        "postcode": "60605",
+        "region": "IL"
+      },
+      "name": "HERO Coffee Bar",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "4aba6980f964a520368120e3",
+      "categories": [
+        {
+          "id": 13135,
+          "name": "Cuban Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cuban_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13334,
+          "name": "Sandwich Spot",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/deli_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 386,
+      "geocodes": {
+        "main": {
+          "latitude": 41.875846,
+          "longitude": -87.626591
+        },
+        "roof": {
+          "latitude": 41.875846,
+          "longitude": -87.626591
+        }
+      },
+      "link": "/v3/places/4aba6980f964a520368120e3",
+      "location": {
+        "address": "26 E Ida B Wells Dr",
+        "address_extended": "Ste 1",
+        "census_block": "170313204001027",
+        "country": "US",
+        "cross_street": "at State St",
+        "dma": "Chicago",
+        "formatted_address": "26 E Ida B Wells Dr (at State St), Chicago, IL 60605",
+        "locality": "Chicago",
+        "postcode": "60605",
+        "region": "IL"
+      },
+      "name": "Cafecito",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "4b5708f9f964a520c02328e3",
+      "categories": [
+        {
+          "id": 13001,
+          "name": "Bagel Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bagels_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [
+        {
+          "id": "2cb519f8-883c-4263-860a-cd83325fbb97",
+          "name": "Dunkin'"
+        }
+      ],
+      "distance": 448,
+      "geocodes": {
+        "main": {
+          "latitude": 41.87673,
+          "longitude": -87.624763
+        },
+        "roof": {
+          "latitude": 41.87673,
+          "longitude": -87.624763
+        }
+      },
+      "link": "/v3/places/4b5708f9f964a520c02328e3",
+      "location": {
+        "address": "406 S Michigan Ave",
+        "census_block": "170313204001025",
+        "country": "US",
+        "cross_street": "at E Van Buren St",
+        "dma": "Chicago",
+        "formatted_address": "406 S Michigan Ave (at E Van Buren St), Chicago, IL 60605",
+        "locality": "Chicago",
+        "postcode": "60605",
+        "region": "IL"
+      },
+      "name": "Dunkin'",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "553977b7498eb9779dcb0592",
+      "categories": [
+        {
+          "id": 13002,
+          "name": "Bakery",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bakery_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13068,
+          "name": "American Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 468,
+      "geocodes": {
+        "main": {
+          "latitude": 41.881329,
+          "longitude": -87.625724
+        },
+        "roof": {
+          "latitude": 41.881329,
+          "longitude": -87.625724
+        }
+      },
+      "link": "/v3/places/553977b7498eb9779dcb0592",
+      "location": {
+        "address": "33 S Wabash Ave",
+        "census_block": "170313204001008",
+        "country": "US",
+        "cross_street": "",
+        "dma": "Chicago",
+        "formatted_address": "33 S Wabash Ave, Chicago, IL 60603",
+        "locality": "Chicago",
+        "postcode": "60603",
+        "region": "IL"
+      },
+      "name": "Goddess and the Baker, Wabash",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "5d9fa66135753e00088aeb92",
+      "categories": [
+        {
+          "id": 10039,
+          "name": "Music Venue",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/musicvenue_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 524,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 41.88063,
+          "longitude": -87.635719
+        },
+        "main": {
+          "latitude": 41.880241,
+          "longitude": -87.635714
+        },
+        "roof": {
+          "latitude": 41.880241,
+          "longitude": -87.635714
+        }
+      },
+      "link": "/v3/places/5d9fa66135753e00088aeb92",
+      "location": {
+        "address": "311 W Monroe St",
+        "census_block": "170318391002001",
+        "country": "US",
+        "cross_street": "Franklin",
+        "dma": "Chicago",
+        "formatted_address": "311 W Monroe St (Franklin), Chicago, IL 60606",
+        "locality": "Chicago",
+        "postcode": "60606",
+        "region": "IL"
+      },
+      "name": "For Five Chicago Chicago",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "5e0cd9fea98acf000737c2d7",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 567,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 41.873041,
+          "longitude": -87.629142
+        },
+        "main": {
+          "latitude": 41.873049,
+          "longitude": -87.628904
+        },
+        "roof": {
+          "latitude": 41.873049,
+          "longitude": -87.628904
+        }
+      },
+      "link": "/v3/places/5e0cd9fea98acf000737c2d7",
+      "location": {
+        "address": "715 S Dearborn St",
+        "census_block": "170318390004003",
+        "country": "US",
+        "cross_street": "",
+        "dma": "Chicago",
+        "formatted_address": "715 S Dearborn St, Chicago, IL 60605",
+        "locality": "Chicago",
+        "postcode": "60605",
+        "region": "IL"
+      },
+      "name": "The Grail Cafe",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "4b38cc49f964a5207e5025e3",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [
+        {
+          "id": "ab4c54c0-d68a-012e-5619-003048cad9da",
+          "name": "Starbucks"
+        }
+      ],
+      "distance": 597,
+      "geocodes": {
+        "main": {
+          "latitude": 41.882295,
+          "longitude": -87.634281
+        },
+        "roof": {
+          "latitude": 41.882295,
+          "longitude": -87.634281
+        }
+      },
+      "link": "/v3/places/4b38cc49f964a5207e5025e3",
+      "location": {
+        "address": "200 W Madison St",
+        "address_extended": "Lbby 1",
+        "census_block": "170318391001062",
+        "country": "US",
+        "cross_street": "",
+        "dma": "Chicago",
+        "formatted_address": "200 W Madison St, Chicago, IL 60606",
+        "locality": "Chicago",
+        "postcode": "60606",
+        "region": "IL"
+      },
+      "name": "Starbucks",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "4a5bc165f964a520b9bb1fe3",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 786,
+      "geocodes": {
+        "main": {
+          "latitude": 41.88436,
+          "longitude": -87.625976
+        },
+        "roof": {
+          "latitude": 41.88436,
+          "longitude": -87.625976
+        }
+      },
+      "link": "/v3/places/4a5bc165f964a520b9bb1fe3",
+      "location": {
+        "address": "53 E Randolph St",
+        "census_block": "170313201022008",
+        "country": "US",
+        "cross_street": "btwn Wabash Ave & Garland Ct",
+        "dma": "Chicago",
+        "formatted_address": "53 E Randolph St (btwn Wabash Ave & Garland Ct), Chicago, IL 60601",
+        "locality": "Chicago",
+        "postcode": "60601",
+        "region": "IL"
+      },
+      "name": "Intelligentsia Coffee",
+      "related_places": {},
+      "timezone": "America/Chicago"
     }
   ]

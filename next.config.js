@@ -6,9 +6,10 @@
 //     path: '/_next/image',
 //    },
 // };
-
+const dotenv = require('dotenv');
+dotenv.config();
 module.exports = {
-  images:{
-    domains: ['images.unsplash.com']
-  }
-}
+    images: {
+        domains: ['images.unsplash.com', 'ss3.4sqi.net'],
+    },
+};
