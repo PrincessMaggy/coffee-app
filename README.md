@@ -21,7 +21,7 @@
 
 
 - Foursquare docs[https://location.foursquare.com/developer/reference/api-overview]
-- Solution URL: [https://github.com/PrincessMaggy/coffee-app.git]
+- Solution URL: [https://coffee-app-sandy.vercel.app/]
 - Live Site URL: []
 
 ### Built with
