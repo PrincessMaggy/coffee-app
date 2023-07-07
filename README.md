@@ -1,5 +1,3 @@
-
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -11,18 +9,17 @@
 
 ## Overview
 
-
 ### Screenshot
 
 ![screenshot](./Screenshot.png)
 
 ### Links
-
+A nextJS application used to view coffee stores around.
 
 
 - Foursquare docs[https://location.foursquare.com/developer/reference/api-overview]
-- Solution URL: [https://coffee-app-sandy.vercel.app/]
-- Live Site URL: []
+- Solution URL: [https://github.com/PrincessMaggy/coffee-app.git]
+- Live Site URL: [https://coffee-app-sandy.vercel.app/]
 
 ### Built with
 
