@@ -15,7 +15,7 @@
 
 ### Links
 A nextJS application used to view coffee stores around.
-
+<!-- fsq3W0srXFeRwVKAyPT5zqHlDJwgvupr6mGU+8gvrr1YOEw= -->
 
 - Foursquare docs[https://location.foursquare.com/developer/reference/api-overview]
 - Solution URL: [https://github.com/PrincessMaggy/coffee-app.git]

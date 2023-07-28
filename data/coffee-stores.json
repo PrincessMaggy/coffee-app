@@ -101,6 +101,54 @@
       "timezone": "America/Chicago"
     },
     {
+      "fsq_id": "4a5bc165f964a520b9bb1fe3",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 786,
+      "geocodes": {
+        "main": {
+          "latitude": 41.88436,
+          "longitude": -87.625976
+        },
+        "roof": {
+          "latitude": 41.88436,
+          "longitude": -87.625976
+        }
+      },
+      "link": "/v3/places/4a5bc165f964a520b9bb1fe3",
+      "location": {
+        "address": "53 E Randolph St",
+        "census_block": "170313201022008",
+        "country": "US",
+        "cross_street": "btwn Wabash Ave & Garland Ct",
+        "dma": "Chicago",
+        "formatted_address": "53 E Randolph St (btwn Wabash Ave & Garland Ct), Chicago, IL 60601",
+        "locality": "Chicago",
+        "postcode": "60601",
+        "region": "IL"
+      },
+      "name": "Intelligentsia Coffee",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
       "fsq_id": "5467af9e498e1b95c055253b",
       "categories": [
         {
@@ -161,55 +209,6 @@
         "region": "IL"
       },
       "name": "HERO Coffee Bar",
-      "related_places": {},
-      "timezone": "America/Chicago"
-    },
-    {
-      "fsq_id": "4aba6980f964a520368120e3",
-      "categories": [
-        {
-          "id": 13135,
-          "name": "Cuban Restaurant",
-          "icon": {
-            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cuban_",
-            "suffix": ".png"
-          }
-        },
-        {
-          "id": 13334,
-          "name": "Sandwich Spot",
-          "icon": {
-            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/deli_",
-            "suffix": ".png"
-          }
-        }
-      ],
-      "chains": [],
-      "distance": 386,
-      "geocodes": {
-        "main": {
-          "latitude": 41.875846,
-          "longitude": -87.626591
-        },
-        "roof": {
-          "latitude": 41.875846,
-          "longitude": -87.626591
-        }
-      },
-      "link": "/v3/places/4aba6980f964a520368120e3",
-      "location": {
-        "address": "26 E Ida B Wells Dr",
-        "address_extended": "Ste 1",
-        "census_block": "170313204001027",
-        "country": "US",
-        "cross_street": "at State St",
-        "dma": "Chicago",
-        "formatted_address": "26 E Ida B Wells Dr (at State St), Chicago, IL 60605",
-        "locality": "Chicago",
-        "postcode": "60605",
-        "region": "IL"
-      },
-      "name": "Cafecito",
       "related_places": {},
       "timezone": "America/Chicago"
     },
@@ -315,58 +314,6 @@
       "timezone": "America/Chicago"
     },
     {
-      "fsq_id": "5d9fa66135753e00088aeb92",
-      "categories": [
-        {
-          "id": 10039,
-          "name": "Music Venue",
-          "icon": {
-            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/musicvenue_",
-            "suffix": ".png"
-          }
-        },
-        {
-          "id": 13035,
-          "name": "Coffee Shop",
-          "icon": {
-            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
-            "suffix": ".png"
-          }
-        }
-      ],
-      "chains": [],
-      "distance": 524,
-      "geocodes": {
-        "drop_off": {
-          "latitude": 41.88063,
-          "longitude": -87.635719
-        },
-        "main": {
-          "latitude": 41.880241,
-          "longitude": -87.635714
-        },
-        "roof": {
-          "latitude": 41.880241,
-          "longitude": -87.635714
-        }
-      },
-      "link": "/v3/places/5d9fa66135753e00088aeb92",
-      "location": {
-        "address": "311 W Monroe St",
-        "census_block": "170318391002001",
-        "country": "US",
-        "cross_street": "Franklin",
-        "dma": "Chicago",
-        "formatted_address": "311 W Monroe St (Franklin), Chicago, IL 60606",
-        "locality": "Chicago",
-        "postcode": "60606",
-        "region": "IL"
-      },
-      "name": "For Five Chicago Chicago",
-      "related_places": {},
-      "timezone": "America/Chicago"
-    },
-    {
       "fsq_id": "5e0cd9fea98acf000737c2d7",
       "categories": [
         {
@@ -419,6 +366,170 @@
       "timezone": "America/Chicago"
     },
     {
+      "fsq_id": "5d9fa66135753e00088aeb92",
+      "categories": [
+        {
+          "id": 10039,
+          "name": "Music Venue",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/musicvenue_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 524,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 41.88063,
+          "longitude": -87.635719
+        },
+        "main": {
+          "latitude": 41.880241,
+          "longitude": -87.635714
+        },
+        "roof": {
+          "latitude": 41.880241,
+          "longitude": -87.635714
+        }
+      },
+      "link": "/v3/places/5d9fa66135753e00088aeb92",
+      "location": {
+        "address": "311 W Monroe St",
+        "census_block": "170318391002001",
+        "country": "US",
+        "cross_street": "Franklin",
+        "dma": "Chicago",
+        "formatted_address": "311 W Monroe St (Franklin), Chicago, IL 60606",
+        "locality": "Chicago",
+        "postcode": "60606",
+        "region": "IL"
+      },
+      "name": "For Five Chicago Chicago",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "5808166038fa370f80066dad",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1077,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 41.877995,
+          "longitude": -87.642953
+        },
+        "main": {
+          "latitude": 41.877831,
+          "longitude": -87.642951
+        },
+        "roof": {
+          "latitude": 41.877831,
+          "longitude": -87.642951
+        }
+      },
+      "link": "/v3/places/5808166038fa370f80066dad",
+      "location": {
+        "address": "601 W Jackson Blvd",
+        "census_block": "170312819001020",
+        "country": "US",
+        "cross_street": "",
+        "dma": "Chicago",
+        "formatted_address": "601 W Jackson Blvd, Chicago, IL 60661",
+        "locality": "Chicago",
+        "postcode": "60661",
+        "region": "IL"
+      },
+      "name": "Meddle Coffee Bar",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "51094b2ce4b04df5935bccba",
+      "categories": [
+        {
+          "id": 13001,
+          "name": "Bagel Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bagels_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13002,
+          "name": "Bakery",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bakery_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13068,
+          "name": "American Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1324,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 41.890027,
+          "longitude": -87.630697
+        },
+        "main": {
+          "latitude": 41.890189,
+          "longitude": -87.630699
+        },
+        "roof": {
+          "latitude": 41.890189,
+          "longitude": -87.630699
+        }
+      },
+      "link": "/v3/places/51094b2ce4b04df5935bccba",
+      "location": {
+        "address": "68 W Hubbard St",
+        "census_block": "170310817002027",
+        "country": "US",
+        "cross_street": "at N Clark St",
+        "dma": "Chicago",
+        "formatted_address": "68 W Hubbard St (at N Clark St), Chicago, IL 60654",
+        "locality": "Chicago",
+        "postcode": "60654",
+        "region": "IL"
+      },
+      "name": "Firecakes Donuts",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
       "fsq_id": "4b38cc49f964a5207e5025e3",
       "categories": [
         {
@@ -465,8 +576,181 @@
       "timezone": "America/Chicago"
     },
     {
-      "fsq_id": "4a5bc165f964a520b9bb1fe3",
+      "fsq_id": "4d9b5f6273df8cfa158ef5ec",
       "categories": [
+        {
+          "id": 13043,
+          "name": "Donut Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/donuts_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13001,
+          "name": "Bagel Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bagels_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13068,
+          "name": "American Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1335,
+      "geocodes": {
+        "main": {
+          "latitude": 41.889453,
+          "longitude": -87.635291
+        },
+        "roof": {
+          "latitude": 41.889453,
+          "longitude": -87.635291
+        }
+      },
+      "link": "/v3/places/4d9b5f6273df8cfa158ef5ec",
+      "location": {
+        "address": "401 1/2 N Franklin St",
+        "census_block": "170310818002011",
+        "country": "US",
+        "cross_street": "at W Kinzie St",
+        "dma": "Chicago",
+        "formatted_address": "401 1/2 N Franklin St (at W Kinzie St), Chicago, IL 60654",
+        "locality": "Chicago",
+        "postcode": "60654",
+        "region": "IL"
+      },
+      "name": "The Doughnut Vault",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "59403be49d6a19708d26f0b1",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 584,
+      "geocodes": {
+        "main": {
+          "latitude": 41.87903,
+          "longitude": -87.637115
+        },
+        "roof": {
+          "latitude": 41.87903,
+          "longitude": -87.637115
+        }
+      },
+      "link": "/v3/places/59403be49d6a19708d26f0b1",
+      "location": {
+        "address": "200 S Wacker Dr",
+        "census_block": "170318391002006",
+        "country": "US",
+        "cross_street": "",
+        "dma": "Chicago",
+        "formatted_address": "200 S Wacker Dr, Chicago, IL 60606",
+        "locality": "Chicago",
+        "postcode": "60606",
+        "region": "IL"
+      },
+      "name": "Mojo Coffee",
+      "related_places": {
+        "parent": {
+          "fsq_id": "4a325347f964a5203e9a1fe3",
+          "name": "200 South Wacker"
+        }
+      },
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "569a2c27498e9defd6054348",
+      "categories": [
+        {
+          "id": 13043,
+          "name": "Donut Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/donuts_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13001,
+          "name": "Bagel Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bagels_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1209,
+      "geocodes": {
+        "main": {
+          "latitude": 41.867673,
+          "longitude": -87.626415
+        },
+        "roof": {
+          "latitude": 41.867673,
+          "longitude": -87.626415
+        }
+      },
+      "link": "/v3/places/569a2c27498e9defd6054348",
+      "location": {
+        "address": "26 E Roosevelt Rd",
+        "census_block": "170313206001010",
+        "country": "US",
+        "cross_street": "",
+        "dma": "Chicago",
+        "formatted_address": "26 E Roosevelt Rd, Chicago, IL 60605",
+        "locality": "Chicago",
+        "postcode": "60605",
+        "region": "IL"
+      },
+      "name": "Stan's Donuts",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "57bb7701498eb5ac6831ec93",
+      "categories": [
+        {
+          "id": 13002,
+          "name": "Bakery",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bakery_",
+            "suffix": ".png"
+          }
+        },
         {
           "id": 13035,
           "name": "Coffee Shop",
@@ -485,30 +769,835 @@
         }
       ],
       "chains": [],
-      "distance": 786,
+      "distance": 1021,
       "geocodes": {
         "main": {
-          "latitude": 41.88436,
-          "longitude": -87.625976
+          "latitude": 41.886584,
+          "longitude": -87.632063
         },
         "roof": {
-          "latitude": 41.88436,
-          "longitude": -87.625976
+          "latitude": 41.886584,
+          "longitude": -87.632063
         }
       },
-      "link": "/v3/places/4a5bc165f964a520b9bb1fe3",
+      "link": "/v3/places/57bb7701498eb5ac6831ec93",
       "location": {
-        "address": "53 E Randolph St",
-        "census_block": "170313201022008",
+        "address": "225 N La Salle St",
+        "census_block": "170318391001014",
         "country": "US",
-        "cross_street": "btwn Wabash Ave & Garland Ct",
+        "cross_street": "",
         "dma": "Chicago",
-        "formatted_address": "53 E Randolph St (btwn Wabash Ave & Garland Ct), Chicago, IL 60601",
+        "formatted_address": "225 N La Salle St, Chicago, IL 60601",
         "locality": "Chicago",
         "postcode": "60601",
         "region": "IL"
       },
-      "name": "Intelligentsia Coffee",
+      "name": "Goddess and the Baker, Riverfront",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "562e7fb5498ec03db5f87e14",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13145,
+          "name": "Fast Food Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/fastfood_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1201,
+      "geocodes": {
+        "main": {
+          "latitude": 41.88876,
+          "longitude": -87.631304
+        },
+        "roof": {
+          "latitude": 41.88876,
+          "longitude": -87.631304
+        }
+      },
+      "link": "/v3/places/562e7fb5498ec03db5f87e14",
+      "location": {
+        "address": "346 N Clark St",
+        "census_block": "170310817002036",
+        "country": "US",
+        "cross_street": "btwn Chicago River & W Kinzie St",
+        "dma": "Chicago",
+        "formatted_address": "346 N Clark St (btwn Chicago River & W Kinzie St), Chicago, IL 60654",
+        "locality": "Chicago",
+        "postcode": "60654",
+        "region": "IL"
+      },
+      "name": "Caffe Umbria",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "566c3e8b498e493157b8c508",
+      "categories": [
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1686,
+      "geocodes": {
+        "main": {
+          "latitude": 41.883633,
+          "longitude": -87.648978
+        },
+        "roof": {
+          "latitude": 41.883633,
+          "longitude": -87.648978
+        }
+      },
+      "link": "/v3/places/566c3e8b498e493157b8c508",
+      "location": {
+        "address": "112 N Green St",
+        "census_block": "170318330001030",
+        "country": "US",
+        "cross_street": "",
+        "dma": "Chicago",
+        "formatted_address": "112 N Green St, Chicago, IL 60607",
+        "locality": "Chicago",
+        "postcode": "60607",
+        "region": "IL"
+      },
+      "name": "Sawada Coffee",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "5a43fb90898bdc16c171d6cb",
+      "categories": [
+        {
+          "id": 13043,
+          "name": "Donut Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/donuts_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13001,
+          "name": "Bagel Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bagels_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13068,
+          "name": "American Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 923,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 41.885282,
+          "longitude": -87.624406
+        },
+        "main": {
+          "latitude": 41.885291,
+          "longitude": -87.62421
+        },
+        "roof": {
+          "latitude": 41.885291,
+          "longitude": -87.62421
+        }
+      },
+      "link": "/v3/places/5a43fb90898bdc16c171d6cb",
+      "location": {
+        "address": "181 N Michigan Ave",
+        "census_block": "170313201021025",
+        "country": "US",
+        "cross_street": "",
+        "dma": "Chicago",
+        "formatted_address": "181 N Michigan Ave, Chicago, IL 60601",
+        "locality": "Chicago",
+        "postcode": "60601",
+        "region": "IL"
+      },
+      "name": "Stan's Donuts & Coffee",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "60df41b3be9b9b11c8680772",
+      "categories": [
+        {
+          "id": 13032,
+          "name": "Cafe, Coffee, and Tea House",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [
+        {
+          "id": "c1f85da3-9e02-4c1f-9c30-f7f426ae078c",
+          "name": "Blue Bottle Coffee"
+        }
+      ],
+      "distance": 1271,
+      "geocodes": {
+        "main": {
+          "latitude": 41.88768,
+          "longitude": -87.638222
+        },
+        "roof": {
+          "latitude": 41.88768,
+          "longitude": -87.638222
+        }
+      },
+      "link": "/v3/places/60df41b3be9b9b11c8680772",
+      "location": {
+        "address": "313 W Wolf Point Plz",
+        "address_extended": "N. Orleans St.",
+        "census_block": "170310818002015",
+        "country": "US",
+        "cross_street": "N. Orleans St.",
+        "dma": "Chicago",
+        "formatted_address": "313 W Wolf Point Plz (N. Orleans St.), Chicago, IL 60654",
+        "locality": "Chicago",
+        "postcode": "60654",
+        "region": "IL"
+      },
+      "name": "Blue Bottle Coffee",
+      "related_places": {
+        "parent": {
+          "fsq_id": "5f135138a16efc0139fe17e9",
+          "name": "Wolf Point East"
+        }
+      },
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "59639aa0f427de5e69f63112",
+      "categories": [
+        {
+          "id": 13002,
+          "name": "Bakery",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bakery_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1642,
+      "geocodes": {
+        "main": {
+          "latitude": 41.87681,
+          "longitude": -87.649842
+        },
+        "roof": {
+          "latitude": 41.87681,
+          "longitude": -87.649842
+        }
+      },
+      "link": "/v3/places/59639aa0f427de5e69f63112",
+      "location": {
+        "address": "900 W Van Buren St",
+        "census_block": "170318331001017",
+        "country": "US",
+        "cross_street": "",
+        "dma": "Chicago",
+        "formatted_address": "900 W Van Buren St, Chicago, IL 60607",
+        "locality": "Chicago",
+        "postcode": "60607",
+        "region": "IL"
+      },
+      "name": "Ground Up",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "5f342f4ce1f22c6c2b39196c",
+      "categories": [
+        {
+          "id": 13025,
+          "name": "Wine Bar",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/winery_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1868,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 41.89445,
+          "longitude": -87.634147
+        },
+        "main": {
+          "latitude": 41.894457,
+          "longitude": -87.633902
+        },
+        "roof": {
+          "latitude": 41.894457,
+          "longitude": -87.633902
+        }
+      },
+      "link": "/v3/places/5f342f4ce1f22c6c2b39196c",
+      "location": {
+        "address": "675 N Wells St",
+        "census_block": "170310817002004",
+        "country": "US",
+        "cross_street": "Huron",
+        "dma": "Chicago",
+        "formatted_address": "675 N Wells St (Huron), Chicago, IL 60654",
+        "locality": "Chicago",
+        "postcode": "60654",
+        "region": "IL"
+      },
+      "name": "Edie’s All Day Cafe",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "53d8fa8c498e6d19c0d7dfab",
+      "categories": [
+        {
+          "id": 13043,
+          "name": "Donut Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/donuts_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13001,
+          "name": "Bagel Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bagels_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1908,
+      "geocodes": {
+        "main": {
+          "latitude": 41.894006,
+          "longitude": -87.621491
+        },
+        "roof": {
+          "latitude": 41.894006,
+          "longitude": -87.621491
+        }
+      },
+      "link": "/v3/places/53d8fa8c498e6d19c0d7dfab",
+      "location": {
+        "address": "233 E Erie St",
+        "census_block": "170310814011007",
+        "country": "US",
+        "cross_street": "btwn N St Clair St & N Fairbanks Ct",
+        "dma": "Chicago",
+        "formatted_address": "233 E Erie St (btwn N St Clair St & N Fairbanks Ct), Chicago, IL 60611",
+        "locality": "Chicago",
+        "postcode": "60611",
+        "region": "IL"
+      },
+      "name": "Do-Rite Donuts & Chicken",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "53d6e989498e6c43226aea3d",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13000,
+          "name": "Dining and Drinking",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1681,
+      "geocodes": {
+        "main": {
+          "latitude": 41.883782,
+          "longitude": -87.64835
+        },
+        "roof": {
+          "latitude": 41.883782,
+          "longitude": -87.64835
+        }
+      },
+      "link": "/v3/places/53d6e989498e6c43226aea3d",
+      "location": {
+        "address": "113 N Green St",
+        "address_extended": "# 125",
+        "census_block": "170318330001029",
+        "country": "US",
+        "cross_street": "at W Randolph St",
+        "dma": "Chicago",
+        "formatted_address": "113 N Green St (at W Randolph St), Chicago, IL 60607",
+        "locality": "Chicago",
+        "postcode": "60607",
+        "region": "IL"
+      },
+      "name": "The Allis Chicago",
+      "related_places": {
+        "parent": {
+          "fsq_id": "53d7abbc498ef87cc85a93ab",
+          "name": "The Soho House"
+        }
+      },
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "52c6d2ca498ee459a3d123df",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1623,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 41.892515,
+          "longitude": -87.625636
+        },
+        "main": {
+          "latitude": 41.892055,
+          "longitude": -87.625629
+        },
+        "roof": {
+          "latitude": 41.892055,
+          "longitude": -87.625629
+        }
+      },
+      "link": "/v3/places/52c6d2ca498ee459a3d123df",
+      "location": {
+        "address": "43 E Ohio St",
+        "census_block": "170310815002010",
+        "country": "US",
+        "cross_street": "at N Wabash Ave",
+        "dma": "Chicago",
+        "formatted_address": "43 E Ohio St (at N Wabash Ave), Chicago, IL 60611",
+        "locality": "Chicago",
+        "postcode": "60611",
+        "region": "IL"
+      },
+      "name": "Caffe Lavazza at Eataly",
+      "related_places": {
+        "parent": {
+          "fsq_id": "528cdcfd11d2cbb79f3f6ae5",
+          "name": "Eataly"
+        }
+      },
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "4dfcd715fa76c83b6e7e08f8",
+      "categories": [
+        {
+          "id": 13031,
+          "name": "Burger Joint",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/burger_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1946,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 41.884228,
+          "longitude": -87.651879
+        },
+        "main": {
+          "latitude": 41.884041,
+          "longitude": -87.651875
+        },
+        "roof": {
+          "latitude": 41.884041,
+          "longitude": -87.651875
+        }
+      },
+      "link": "/v3/places/4dfcd715fa76c83b6e7e08f8",
+      "location": {
+        "address": "955 W Randolph St",
+        "address_extended": "at Morgan St",
+        "census_block": "170318330001036",
+        "country": "US",
+        "cross_street": "at Morgan St",
+        "dma": "Chicago",
+        "formatted_address": "955 W Randolph St (at Morgan St), Chicago, IL 60607",
+        "locality": "Chicago",
+        "postcode": "60607",
+        "region": "IL"
+      },
+      "name": "La Colombe Torrefaction",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "59137f3789e490660e4d7a27",
+      "categories": [
+        {
+          "id": 13043,
+          "name": "Donut Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/donuts_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13001,
+          "name": "Bagel Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bagels_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13068,
+          "name": "American Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 2026,
+      "geocodes": {
+        "drop_off": {
+          "latitude": 41.885362,
+          "longitude": -87.652134
+        },
+        "main": {
+          "latitude": 41.885367,
+          "longitude": -87.65196
+        },
+        "roof": {
+          "latitude": 41.885367,
+          "longitude": -87.65196
+        }
+      },
+      "link": "/v3/places/59137f3789e490660e4d7a27",
+      "location": {
+        "address": "181 N Morgan St",
+        "census_block": "170318330001014",
+        "country": "US",
+        "cross_street": "Lake",
+        "dma": "Chicago",
+        "formatted_address": "181 N Morgan St (Lake), Chicago, IL 60607",
+        "locality": "Chicago",
+        "postcode": "60607",
+        "region": "IL"
+      },
+      "name": "Do-Rite Donuts & Chicken",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "546a1569498e64b49d92f5cc",
+      "categories": [
+        {
+          "id": 13043,
+          "name": "Donut Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/donuts_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13001,
+          "name": "Bagel Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bagels_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13068,
+          "name": "American Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1942,
+      "geocodes": {
+        "main": {
+          "latitude": 41.893967,
+          "longitude": -87.620618
+        },
+        "roof": {
+          "latitude": 41.893967,
+          "longitude": -87.620618
+        }
+      },
+      "link": "/v3/places/546a1569498e64b49d92f5cc",
+      "location": {
+        "address": "259 E Erie St",
+        "address_extended": "Ste 100",
+        "census_block": "170310814011007",
+        "country": "US",
+        "cross_street": "N Fairbanks Ct",
+        "dma": "Chicago",
+        "formatted_address": "259 E Erie St (N Fairbanks Ct), Chicago, IL 60611",
+        "locality": "Chicago",
+        "postcode": "60611",
+        "region": "IL"
+      },
+      "name": "Stan's Donuts",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "5740471a498e93d6050bdf3f",
+      "categories": [
+        {
+          "id": 13043,
+          "name": "Donut Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/donuts_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13001,
+          "name": "Bagel Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bagels_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1609,
+      "geocodes": {
+        "main": {
+          "latitude": 41.892016,
+          "longitude": -87.623625
+        },
+        "roof": {
+          "latitude": 41.892016,
+          "longitude": -87.623625
+        }
+      },
+      "link": "/v3/places/5740471a498e93d6050bdf3f",
+      "location": {
+        "address": "535 N Michigan Ave",
+        "census_block": "170310814033002",
+        "country": "US",
+        "cross_street": "Grand",
+        "dma": "Chicago",
+        "formatted_address": "535 N Michigan Ave (Grand), Chicago, IL 60611",
+        "locality": "Chicago",
+        "postcode": "60611",
+        "region": "IL"
+      },
+      "name": "Stan's Donuts & Coffee",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "49cc68d3f964a5207c591fe3",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13236,
+          "name": "Italian Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/italian_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13334,
+          "name": "Sandwich Spot",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/deli_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 2119,
+      "geocodes": {
+        "main": {
+          "latitude": 41.891837,
+          "longitude": -87.647449
+        },
+        "roof": {
+          "latitude": 41.891837,
+          "longitude": -87.647449
+        }
+      },
+      "link": "/v3/places/49cc68d3f964a5207c591fe3",
+      "location": {
+        "address": "517 N Halsted St",
+        "address_extended": "# 19",
+        "census_block": "170318423002035",
+        "country": "US",
+        "cross_street": "btwn W Grand Ave & N Milwaukee Ave",
+        "formatted_address": "517 N Halsted St (btwn W Grand Ave & N Milwaukee Ave), Chicago, IL 60642",
+        "locality": "Chicago",
+        "postcode": "60642",
+        "region": "IL"
+      },
+      "name": "Iguana Cafe",
+      "related_places": {},
+      "timezone": "America/Chicago"
+    },
+    {
+      "fsq_id": "4a9d490af964a520183820e3",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13334,
+          "name": "Sandwich Spot",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/deli_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 1834,
+      "geocodes": {
+        "main": {
+          "latitude": 41.879611,
+          "longitude": -87.651646
+        },
+        "roof": {
+          "latitude": 41.879611,
+          "longitude": -87.651646
+        }
+      },
+      "link": "/v3/places/4a9d490af964a520183820e3",
+      "location": {
+        "address": "111 S Morgan St",
+        "address_extended": "Ste 1",
+        "census_block": "170318331004008",
+        "country": "US",
+        "cross_street": "at W Adams St",
+        "dma": "Chicago",
+        "formatted_address": "111 S Morgan St (at W Adams St), Chicago, IL 60607",
+        "locality": "Chicago",
+        "postcode": "60607",
+        "region": "IL"
+      },
+      "name": "Morgan Street Cafe",
       "related_places": {},
       "timezone": "America/Chicago"
     }
