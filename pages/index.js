@@ -31,16 +31,23 @@ export async function getServerSideProps() {
 }
 
 export default function Home({coffeeStores}) {
-    let [loading, setLoading] = useState(true);
-    useEffect(() => {
-        if (coffeeStores.length > 0) {
-            setLoading(false);
-        }
-    }, [coffeeStores]);
-    const {handleTrackLocation, latLong, locationErrorMsg} = useTrackLocation();
+    // loading component
+    // let [loading, setLoading] = useState(true);
+
+    // useEffect(() => {
+    //     if (coffeeStores.length > 0) {
+    //         setLoading(false);
+    //     }
+    // }, [coffeeStores]);
+
+    // getting user's location
+    const {handleTrackLocation, latLong, locationErrorMsg, loading} =
+        useTrackLocation();
 
     console.log({latLong, locationErrorMsg});
-    const bannerBtnClick = () => {};
+    const bannerBtnClick = () => {
+        handleTrackLocation();
+    };
 
     return (
         <div className='styles.container'>
@@ -62,9 +69,14 @@ export default function Home({coffeeStores}) {
             </Head>
             <main className={styles.main}>
                 <Banner
-                    buttonText='View stores nearby'
+                    buttonText={
+                        loading ? 'Locating store...' : 'View stores nearby'
+                    }
                     onBannerBtnClick={bannerBtnClick}
                 />
+                {locationErrorMsg && (
+                    <p> Something went wrong: {locationErrorMsg}</p>
+                )}
                 <div className={styles.heroImage}>
                     <Image
                         src='/static/hero-image.png'
@@ -74,7 +86,7 @@ export default function Home({coffeeStores}) {
                     />
                 </div>
                 {coffeeStores.length > 0 && (
-                    <>
+                    <div className={styles.sectionWrapper}>
                         <h2 className={styles.heading2}>Chicago Stores</h2>
                         <div className={styles.cardLayout}>
                             {coffeeStores.map((coffeeStore) => {
@@ -89,7 +101,7 @@ export default function Home({coffeeStores}) {
                                 );
                             })}
                         </div>
-                    </>
+                    </div>
                 )}
             </main>
         </div>
