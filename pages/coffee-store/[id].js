@@ -5,45 +5,31 @@ import Image from 'next/image';
 import styles from '../../styles/coffee-store.module.css';
 import coffeeStoresData from '../../data/coffee-stores.json';
 import cls from 'classnames';
+import {getCommonStores} from '../../lib/stores';
 
 export async function getStaticProps(staticProps) {
     const params = staticProps.params;
     console.log('params', params.id);
-    let filt = [];
-    filt.push(
-        coffeeStoresData.find((coffeeStore) => {
-            return coffeeStore.fsq_id == params.id;
-        }),
-    );
-    console.log(filt);
+
+    const coffeeStores = await getCommonStores();
+    console.log(coffeeStores, 'data from second page');
+
     return {
         props: {
-            coffeeStore: filt.map((item) => {
-                const imageUrl =
-                    item.categories[0]?.icon?.prefix +
-                    '32' +
-                    item.categories[0]?.icon?.suffix;
-
-                return {
-                    imageUrl,
-                    name: item.name,
-                    fsq_id: item.fsq_id,
-                    location: item.location.formatted_address,
-                    locality: item.location.locality,
-                    categories: item.categories
-                        .map((item) => item.name)
-                        .join(', '),
-                };
+            coffeeStore: coffeeStores.find((coffeeStore) => {
+                return coffeeStore.id == params.id;
             }),
         },
     };
 }
 
-export function getStaticPaths() {
-    const paths = coffeeStoresData.map((coffeeStore) => {
+export async function getStaticPaths() {
+    const coffeeStores = await getCommonStores();
+
+    const paths = coffeeStores.map((coffeeStore) => {
         return {
             params: {
-                id: coffeeStore.fsq_id,
+                id: coffeeStore.id,
             },
         };
     });
@@ -54,13 +40,13 @@ export function getStaticPaths() {
 }
 
 const CoffeeStore = (props) => {
-    console.log(props.coffeeStore[0]);
+    console.log(props.coffeeStore);
     const router = useRouter();
     console.log(router.query.id);
     if (router.isFallback) {
         return <div>Loading...</div>;
     }
-    const data = props.coffeeStore[0];
+    const data = props.coffeeStore;
 
     const handleUpVoteButton = () => {};
     return (
