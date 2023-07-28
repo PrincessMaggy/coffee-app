@@ -9,10 +9,31 @@ import cls from 'classnames';
 export async function getStaticProps(staticProps) {
     const params = staticProps.params;
     console.log('params', params.id);
+    let filt = [];
+    filt.push(
+        coffeeStoresData.find((coffeeStore) => {
+            return coffeeStore.fsq_id == params.id;
+        }),
+    );
+    console.log(filt);
     return {
         props: {
-            coffeeStore: coffeeStoresData.find((coffeeStore) => {
-                return coffeeStore.fsq_id == params.id;
+            coffeeStore: filt.map((item) => {
+                const imageUrl =
+                    item.categories[0]?.icon?.prefix +
+                    '32' +
+                    item.categories[0]?.icon?.suffix;
+
+                return {
+                    imageUrl,
+                    name: item.name,
+                    fsq_id: item.fsq_id,
+                    location: item.location.formatted_address,
+                    locality: item.location.locality,
+                    categories: item.categories
+                        .map((item) => item.name)
+                        .join(', '),
+                };
             }),
         },
     };
@@ -28,17 +49,18 @@ export function getStaticPaths() {
     });
     return {
         paths,
-        fallback: true,
+        fallback: false,
     };
 }
 
 const CoffeeStore = (props) => {
+    console.log(props.coffeeStore[0]);
     const router = useRouter();
     console.log(router.query.id);
     if (router.isFallback) {
         return <div>Loading...</div>;
     }
-    const data = props.coffeeStore;
+    const data = props.coffeeStore[0];
 
     const handleUpVoteButton = () => {};
     return (
@@ -57,10 +79,10 @@ const CoffeeStore = (props) => {
                         <h1 className={styles.name}>{data.name}</h1>
                     </div>
                     <Image
-                        // src={data.imgUrl}
-                        src='/static/icons/nearMe.svg'
-                        width={600}
-                        height={360}
+                        src={data.imageUrl}
+                        // src='/static/icons/nearMe.svg'
+                        width={300}
+                        height={180}
                         className={styles.storeImg}
                         alt={data.name}
                     ></Image>
@@ -73,34 +95,41 @@ const CoffeeStore = (props) => {
                             width='24'
                             height='24'
                         />
-                        <p className={styles.text}>
-                            {data.location.formatted_address}
-                        </p>
+                        <p className={styles.text}>{data.location}</p>
                     </div>
-
                     <div className={styles.iconWrapper}>
                         <Image
                             src='/static/icons/nearMe.svg'
                             width='24'
                             height='24'
                         />
-                        <p className={styles.text}>{data.location.locality}</p>
+                        <p className={styles.text}>{data.locality}</p>
                     </div>
-
+                    <div className={styles.iconWrapper}>
+                        <Image
+                            src='/static/icons/nearMe.svg'
+                            width='24'
+                            height='24'
+                        />
+                        <p style={{paddingLeft: '0.5rem'}}>
+                            {' '}
+                            Categories: {data.categories}
+                        </p>
+                    </div>{' '}
                     <div className={styles.iconWrapper}>
                         <Image
                             src='/static/icons/star.svg'
                             width='24'
                             height='24'
                         />
-                        <p>{data.location.region}</p>
+
+                        <p className={styles.text}>1</p>
                     </div>
-                    <p className={styles.text}>1</p>
                     <button
                         className={styles.upvoteButton}
                         onClick={handleUpVoteButton}
                     >
-                        Up vote
+                        Up vote !
                     </button>
                 </div>
             </div>
