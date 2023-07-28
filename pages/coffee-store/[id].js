@@ -8,11 +8,11 @@ import cls from 'classnames';
 
 export async function getStaticProps(staticProps) {
     const params = staticProps.params;
-    console.log('params', params);
+    console.log('params', params.id);
     return {
         props: {
             coffeeStore: coffeeStoresData.find((coffeeStore) => {
-                return coffeeStore.fsq_id === params.id;
+                return coffeeStore.fsq_id == params.id;
             }),
         },
     };
@@ -34,7 +34,7 @@ export function getStaticPaths() {
 
 const CoffeeStore = (props) => {
     const router = useRouter();
-
+    console.log(router.query.id);
     if (router.isFallback) {
         return <div>Loading...</div>;
     }
