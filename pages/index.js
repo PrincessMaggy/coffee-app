@@ -1,11 +1,13 @@
 import Head from 'next/head';
-
+import {useState, useEffect} from 'react';
 import styles from '../styles/Home.module.css';
 import Banner from '../components/banner';
 import Image from 'next/image';
 import Card from '../components/card';
+import Spinner from '../components/spinner';
 
 import {getCommonStores} from '../lib/stores';
+import useTrackLocation from '../hooks/useTrackLocation';
 
 export async function getServerSideProps() {
     try {
@@ -29,10 +31,21 @@ export async function getServerSideProps() {
 }
 
 export default function Home({coffeeStores}) {
+    let [loading, setLoading] = useState(true);
+    useEffect(() => {
+        if (coffeeStores.length > 0) {
+            setLoading(false);
+        }
+    }, [coffeeStores]);
+    const {handleTrackLocation, latLong, locationErrorMsg} = useTrackLocation();
+
+    console.log({latLong, locationErrorMsg});
     const bannerBtnClick = () => {};
 
     return (
         <div className='styles.container'>
+            {/* <Spinner loading={loading} /> */}
+
             <Head>
                 <title>Coffee-app</title>
                 <meta
