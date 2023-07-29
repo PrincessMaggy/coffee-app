@@ -43,17 +43,20 @@ export default function Home({coffeeStores}) {
     // getting user's location
     const {handleTrackLocation, latLong, locationErrorMsg, loading} =
         useTrackLocation();
+    const [nearCoffeeStores, setNearCoffeeStores] = useState('');
+    const [err, setErr] = useState(null);
 
     useEffect(() => {
         const fetchData = async () => {
             if (latLong) {
                 try {
                     const fetchedCoffeeStores = await getCommonStores(latLong);
-                    console.log(fetchedCoffeeStores);
+                    setNearCoffeeStores(fetchedCoffeeStores);
                     // set coffee stores
-                } catch (e) {
+                } catch (error) {
                     // set error
-                    console.log({error: e});
+                    console.log({error: error});
+                    setErr(error.message);
                 }
             }
         };
@@ -92,6 +95,7 @@ export default function Home({coffeeStores}) {
                 {locationErrorMsg && (
                     <p> Something went wrong: {locationErrorMsg}</p>
                 )}
+                {err && <p> Something went wrong: {err}</p>}
                 <div className={styles.heroImage}>
                     <Image
                         src='/static/hero-image.png'
@@ -100,6 +104,25 @@ export default function Home({coffeeStores}) {
                         alt='hero'
                     />
                 </div>
+
+                {nearCoffeeStores.length > 0 && (
+                    <div className={styles.sectionWrapper}>
+                        <h2 className={styles.heading2}>Stores near me</h2>
+                        <div className={styles.cardLayout}>
+                            {nearCoffeeStores.map((coffeeStore) => {
+                                return (
+                                    <Card
+                                        name={coffeeStore.name}
+                                        href={`/coffee-store/${coffeeStore.id}`}
+                                        key={coffeeStore.id}
+                                        imgUrl={coffeeStore.imageUrl}
+                                        className={styles.card}
+                                    />
+                                );
+                            })}
+                        </div>
+                    </div>
+                )}
                 {coffeeStores.length > 0 && (
                     <div className={styles.sectionWrapper}>
                         <h2 className={styles.heading2}>Chicago Stores</h2>
