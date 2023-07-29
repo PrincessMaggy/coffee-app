@@ -4,7 +4,6 @@ import styles from '../styles/Home.module.css';
 import Banner from '../components/banner';
 import Image from 'next/image';
 import Card from '../components/card';
-import Spinner from '../components/spinner';
 
 import {getCommonStores} from '../lib/stores';
 import useTrackLocation from '../hooks/useTrackLocation';
@@ -12,7 +11,7 @@ import useTrackLocation from '../hooks/useTrackLocation';
 export async function getServerSideProps() {
     try {
         const coffeeStores = await getCommonStores();
-        console.log(coffeeStores); // Log the coffeeStores data to the console
+        // console.log(coffeeStores); // Log the coffeeStores data to the console
 
         return {
             props: {
@@ -31,15 +30,6 @@ export async function getServerSideProps() {
 }
 
 export default function Home({coffeeStores}) {
-    // loading component
-    // let [loading, setLoading] = useState(true);
-
-    // useEffect(() => {
-    //     if (coffeeStores.length > 0) {
-    //         setLoading(false);
-    //     }
-    // }, [coffeeStores]);
-
     // getting user's location
     const {handleTrackLocation, latLong, locationErrorMsg, loading} =
         useTrackLocation();
@@ -62,15 +52,13 @@ export default function Home({coffeeStores}) {
         };
         fetchData();
     }, [latLong]);
-    console.log({latLong, locationErrorMsg});
+    // console.log({latLong, locationErrorMsg});
     const bannerBtnClick = () => {
         handleTrackLocation();
     };
 
     return (
         <div className='styles.container'>
-            {/* <Spinner loading={loading} /> */}
-
             <Head>
                 <title>Coffee-app</title>
                 <meta
