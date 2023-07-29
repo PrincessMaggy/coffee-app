@@ -44,6 +44,21 @@ export default function Home({coffeeStores}) {
     const {handleTrackLocation, latLong, locationErrorMsg, loading} =
         useTrackLocation();
 
+    useEffect(() => {
+        const fetchData = async () => {
+            if (latLong) {
+                try {
+                    const fetchedCoffeeStores = await getCommonStores(latLong);
+                    console.log(fetchedCoffeeStores);
+                    // set coffee stores
+                } catch (e) {
+                    // set error
+                    console.log({error: e});
+                }
+            }
+        };
+        fetchData();
+    }, [latLong]);
     console.log({latLong, locationErrorMsg});
     const bannerBtnClick = () => {
         handleTrackLocation();
@@ -70,7 +85,7 @@ export default function Home({coffeeStores}) {
             <main className={styles.main}>
                 <Banner
                     buttonText={
-                        loading ? 'Locating store...' : 'View stores nearby'
+                        loading ? 'Locating stores...' : 'View stores nearby'
                     }
                     onBannerBtnClick={bannerBtnClick}
                 />
