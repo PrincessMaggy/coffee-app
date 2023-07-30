@@ -1,19 +1,19 @@
 import {createContext, useReducer} from 'react';
 import '../styles/globals.css';
 
-const StoreContext = createContext();
+export const StoreContext = createContext();
 
-const ACTION_TYPES = {
+export const ACTION_TYPES = {
     SET_LAT_LONG: 'SET_LAT_LONG',
-    SET_COFFEE_STORES: 'SET_COFFEE_STORES',
+    SET_NEAR_COFFEE_STORES: 'SET_NEAR_COFFEE_STORES',
 };
 
 const storeReducer = (state, action) => {
-    switch (action) {
-        case ACTION_TYPES.SET_COFFEE_STORES: {
+    switch (action.type) {
+        case ACTION_TYPES.SET_NEAR_COFFEE_STORES: {
             return {
                 ...state,
-                coffeeStores: action.payload.coffeeStores,
+                nearCoffeeStores: action.payload.nearCoffeeStores,
             };
         }
         case ACTION_TYPES.SET_LAT_LONG: {
@@ -30,7 +30,7 @@ const storeReducer = (state, action) => {
 const StoreProvider = ({children}) => {
     const initialState = {
         latLong: '',
-        coffeeStores: [],
+        nearCoffeeStores: [],
     };
     const [state, dispatch] = useReducer(storeReducer, initialState);
 

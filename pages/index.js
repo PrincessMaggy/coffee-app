@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useContext} from 'react';
 import styles from '../styles/Home.module.css';
 import Banner from '../components/banner';
 import Image from 'next/image';
+import {ACTION_TYPES, StoreContext} from './_app';
 import Card from '../components/card';
 
 import {getCommonStores} from '../lib/stores';
@@ -31,17 +32,24 @@ export async function getServerSideProps() {
 
 export default function Home({coffeeStores}) {
     // getting user's location
-    const {handleTrackLocation, latLong, locationErrorMsg, loading} =
-        useTrackLocation();
-    const [nearCoffeeStores, setNearCoffeeStores] = useState('');
+    const {handleTrackLocation, locationErrorMsg, loading} = useTrackLocation();
     const [err, setErr] = useState(null);
+
+    const {dispatch, state} = useContext(StoreContext);
+    const {nearCoffeeStores, latLong} = state;
+    console.log(nearCoffeeStores, latLong);
 
     useEffect(() => {
         const fetchData = async () => {
             if (latLong) {
                 try {
                     const fetchedCoffeeStores = await getCommonStores(latLong);
-                    setNearCoffeeStores(fetchedCoffeeStores);
+                    dispatch({
+                        type: ACTION_TYPES.SET_NEAR_COFFEE_STORES,
+                        payload: {
+                            nearCoffeeStores: fetchedCoffeeStores,
+                        },
+                    });
                     // set coffee stores
                 } catch (error) {
                     // set error
@@ -93,7 +101,7 @@ export default function Home({coffeeStores}) {
                     />
                 </div>
 
-                {nearCoffeeStores.length > 0 && (
+                {nearCoffeeStores?.length > 0 && (
                     <div className={styles.sectionWrapper}>
                         <h2 className={styles.heading2}>Stores near me</h2>
                         <div className={styles.cardLayout}>
