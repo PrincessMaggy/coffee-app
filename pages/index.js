@@ -3,7 +3,7 @@ import {useState, useEffect, useContext} from 'react';
 import styles from '../styles/Home.module.css';
 import Banner from '../components/banner';
 import Image from 'next/image';
-import {ACTION_TYPES, StoreContext} from './_app';
+import {ACTION_TYPES, StoreContext} from '../context/storeContext';
 import Card from '../components/card';
 
 import {getCommonStores} from '../lib/stores';
