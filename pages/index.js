@@ -43,11 +43,14 @@ export default function Home({coffeeStores}) {
         const fetchData = async () => {
             if (latLong) {
                 try {
-                    const fetchedCoffeeStores = await getCommonStores(latLong);
+                    const fetchedCoffeeStores = await fetch(
+                        `/api/getCoffeeStoresByLocation?latLong=${latLong}`,
+                    );
+                    const nearCoffeeStores = await fetchedCoffeeStores.json();
                     dispatch({
                         type: ACTION_TYPES.SET_NEAR_COFFEE_STORES,
                         payload: {
-                            nearCoffeeStores: fetchedCoffeeStores,
+                            nearCoffeeStores,
                         },
                     });
                     // set coffee stores
