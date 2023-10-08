@@ -41,17 +41,18 @@
     /* padding-bottom: 1rem 16px; */
 }
 
-/* .storeImg {
+.storeImg {
     box-shadow: var(0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 #0000),
         0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 #0000,
         0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
     border-radius: 0.75rem;
-    max-width: 100%;
-    height: 70vh;
+    /* max-width: 100%;
+    height: 70vh; */
     vertical-align: middle;
     border-style: none;
-} */
+    border: 1px solid #f3ca7c;
+}
 
 .col2 {
     border-radius: 1rem /* 16px */;

@@ -49,7 +49,7 @@ const CoffeeStore = (initialProps) => {
         initialProps.coffeeStore || {},
     );
     const {
-        state: {coffeeStores},
+        state: {nearCoffeeStores},
     } = useContext(StoreContext);
     const id = router.query.id;
 
@@ -82,10 +82,12 @@ const CoffeeStore = (initialProps) => {
 
     useEffect(() => {
         if (isEmpty(initialProps.coffeeStore)) {
-            if (coffeeStores?.length > 0) {
-                const findCoffeeStoreById = coffeeStores.find((coffeeStore) => {
-                    return coffeeStore.id.toString() === id; //dynamic id
-                });
+            if (nearCoffeeStores?.length > 0) {
+                const findCoffeeStoreById = nearCoffeeStores.find(
+                    (coffeeStore) => {
+                        return coffeeStore.id.toString() === id; //dynamic id
+                    },
+                );
                 setCoffeeStore(findCoffeeStoreById);
                 handleCreateCoffeeStore(findCoffeeStoreById);
             }
@@ -93,7 +95,7 @@ const CoffeeStore = (initialProps) => {
             // SSG
             handleCreateCoffeeStore(initialProps.coffeeStore);
         }
-    }, [id, initialProps.coffeeStore, coffeeStores]);
+    }, [id, initialProps.coffeeStore, nearCoffeeStores]);
 
     const {
         name = '',
@@ -105,47 +107,47 @@ const CoffeeStore = (initialProps) => {
 
     const [votingCount, setVotingCount] = useState(0);
 
-    // const {data, error} = useSWR(`/api/getCoffeeStoreById?id=${id}`, fetcher);
-    // useEffect(() => {
-    //     if (data && data.length > 0) {
-    //         setCoffeeStore(data[0]);
-    //         setVotingCount(data[0].voting);
-    //     }
-    // }, [data]);
+    const {data, error} = useSWR(`/api/getCoffeeStoreById?id=${id}`, fetcher);
+    useEffect(() => {
+        if (data && data.length > 0) {
+            setCoffeeStore(data[0]);
+            setVotingCount(data[0].voting);
+        }
+    }, [data]);
 
     if (router.isFallback) {
         return <div>Loading...</div>;
     }
 
     const handleUpvoteButton = async () => {
-        //     try {
-        //         const response = await fetch('/api/favouriteCoffeeStoreById', {
-        //             method: 'PUT',
-        //             headers: {
-        //                 'Content-Type': 'application/json',
-        //             },
-        //             body: JSON.stringify({
-        //                 id,
-        //             }),
-        //         });
-        //         const dbCoffeeStore = await response.json();
-        //         if (dbCoffeeStore && dbCoffeeStore.length > 0) {
-        //             let count = votingCount + 1;
-        //             setVotingCount(count);
-        //         }
-        //     } catch (err) {
-        //         console.error('Error upvoting the coffee store.', err);
-        //     }
+        try {
+            const response = await fetch('/api/favouriteCoffeeStoreById', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    id,
+                }),
+            });
+            const dbCoffeeStore = await response.json();
+            if (dbCoffeeStore && dbCoffeeStore.length > 0) {
+                let count = votingCount + 1;
+                setVotingCount(count);
+            }
+        } catch (err) {
+            console.error('Error upvoting the coffee store.', err);
+        }
     };
 
-    // if (error) {
-    //     console.log(error, 'error');
-    //     return (
-    //         <div>
-    //             Something went wrong with retrieving the coffee store page.
-    //         </div>
-    //     );
-    // }
+    if (error) {
+        console.log(error, 'error');
+        return (
+            <div>
+                Something went wrong with retrieving the coffee store page.
+            </div>
+        );
+    }
 
     return (
         <div className={styles.layout}>
@@ -182,7 +184,7 @@ const CoffeeStore = (initialProps) => {
                         />
                         <p className={styles.text}>{location}</p>
                     </div>
-                    <div className={styles.iconWrapper}>
+                    {/* <div className={styles.iconWrapper}>
                         <Image
                             src='/static/icons/nearMe.svg'
                             width='24'
@@ -190,7 +192,7 @@ const CoffeeStore = (initialProps) => {
                             alt='img'
                         />
                         <p className={styles.text}>{locality}</p>
-                    </div>
+                    </div> */}
                     <div className={styles.iconWrapper}>
                         <Image
                             src='/static/icons/nearMe.svg'

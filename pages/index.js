@@ -106,7 +106,12 @@ export default function Home({coffeeStores}) {
 
                 {nearCoffeeStores?.length > 0 && (
                     <div className={styles.sectionWrapper}>
-                        <h2 className={styles.heading2}>Stores near me</h2>
+                        <h2
+                            className={styles.heading2}
+                            style={{color: 'rgba(67, 56, 202, 1)'}}
+                        >
+                            Stores near me
+                        </h2>
                         <div className={styles.cardLayout}>
                             {nearCoffeeStores.map((coffeeStore) => {
                                 return (
