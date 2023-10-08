@@ -9,7 +9,7 @@ import Card from '../components/card';
 import {getCommonStores} from '../lib/stores';
 import useTrackLocation from '../hooks/useTrackLocation';
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     try {
         const coffeeStores = await getCommonStores();
         // console.log(coffeeStores); // Log the coffeeStores data to the console
@@ -37,7 +37,7 @@ export default function Home({coffeeStores}) {
 
     const {dispatch, state} = useContext(StoreContext);
     const {nearCoffeeStores, latLong} = state;
-    console.log(nearCoffeeStores, latLong);
+    // console.log(nearCoffeeStores, latLong);
 
     useEffect(() => {
         const fetchData = async () => {
