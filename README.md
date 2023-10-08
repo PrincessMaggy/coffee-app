@@ -18,7 +18,8 @@ A nextJS application used to view coffee stores around.
 
 - Foursquare docs[https://location.foursquare.com/developer/reference/api-overview]
 - MDN Geolocation API docs [https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API]
-- Airtable [https://airtable.com/account]
+- Airtable [https://airtable.com/appgxv9oSAE5CYxye/api/docs]
+- Database [https://airtable.com/appgxv9oSAE5CYxye/tbl7FBkxS01s9xGsW/viwfpqqBOXZ81VWMH?blocks=hide]
 - Solution URL: [https://github.com/PrincessMaggy/coffee-app.git]
 - Live Site URL: [https://coffee-app-sandy.vercel.app/]
 
@@ -27,6 +28,7 @@ A nextJS application used to view coffee stores around.
 - NEXT JS 
 - React JS
 - CSS custom properties
+- Airtable
 
 ## Author
 

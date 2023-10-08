@@ -8,7 +8,8 @@ const createCoffeeStore = async (req, res) => {
     if (req.method === 'POST') {
         //find a record
 
-        const {id, name, neighbourhood, address, imgUrl, voting} = req.body;
+        const {id, name, categories, location, imageUrl, locality, voting} =
+            req.body;
 
         try {
             if (id) {
@@ -24,16 +25,18 @@ const createCoffeeStore = async (req, res) => {
                                 fields: {
                                     id,
                                     name,
-                                    address,
-                                    neighbourhood,
+                                    location,
+                                    categories,
                                     voting,
-                                    imgUrl,
+                                    locality,
+                                    imageUrl,
                                 },
                             },
                         ]);
 
                         const records = getMinifiedRecords(createRecords);
                         res.json(records);
+                        console.log('creating store was a success');
                     } else {
                         res.status(400);
                         res.json({message: 'Id or name is missing'});
